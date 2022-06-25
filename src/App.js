@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Characters from "./components/Characters";
+import "../src/components/Characters.css"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+<Characters name={"Bart"}
+            surname={"Simson"}
+            body={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, nulla!"}
+            img={"https://upload.wikimedia.org/wikipedia/ru/2/29/Bart_Simpson.gif"}
+/>
+        <Characters name={"Homer"}
+            surname={"Simson"}
+            body={"Lorem ipsum dolor sit amet, consectetur adipisicing elit.Culpa" +
+                " exercitationem expedita laboriosam nihil nisi recusandae."}
+            img={"https://upload.wikimedia.org/wikipedia/uk/0/02/Homer_Simpson_2006.png"}
+/>
+        <Characters name={"Martha "}
+                    surname={"Simson"}
+                    body={"Lorem ipsum dolor sit amet, consectetur adipisicing elit.Culpa" +
+                        " exercitationem expedita laboriosam nihil nisi recusandae."}
+                    img={"https://upload.wikimedia.org/wikipedia/ru/thumb/0/0b/Marge_Simpson.png/217px-Marge_Simpson.png"}
+        />
+        <Characters name={"liza"}
+                    surname={"Simson"}
+                    body={"Lorem ipsum dolor sit amet, consectetur adipisicing elit.Culpa" +
+                        " exercitationem expedita laboriosam nihil nisi recusandae."}
+                    img={"https://upload.wikimedia.org/wikipedia/uk/a/ae/Lisasmiling.png"}
+        />
     </div>
   );
 }
