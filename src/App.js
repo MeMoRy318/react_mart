@@ -10,7 +10,7 @@ function App() {
 />
         <Characters name={"Homer"}
             surname={"Simson"}
-            body={"Lorem ipsum dolor sit amet, consectetur adipisicing elit.Culpa" +
+            body={"Lorem  ipsum dolor sit amet, consectetur adipisicing elit.Culpa" +
                 " exercitationem expedita laboriosam nihil nisi recusandae."}
             img={"https://upload.wikimedia.org/wikipedia/uk/0/02/Homer_Simpson_2006.png"}
 />
