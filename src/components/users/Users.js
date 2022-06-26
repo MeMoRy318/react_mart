@@ -6,6 +6,8 @@ export default function Users () {
 const [users,setUsers] = useState([])
     const [user,setUser] = useState({})
 
+    const UserDetalis = (item) => setUser(item)
+
     useEffect(function () {
         fetch("https://jsonplaceholder.typicode.com/users")
             .then(value => value.json())
@@ -15,7 +17,7 @@ return (
     <div>
 
         {
-            users.map((value,index) => <User key={index} item={value}/>)
+            users.map((value,index) => <User key={index} item={value} fn={UserDetalis}/>)
         }
     </div>
 );
